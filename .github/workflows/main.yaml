@@ -1,4 +1,4 @@
-name: vprofile actions
+name: vprofile actions debug
 
 on:
   workflow_dispatch
@@ -32,7 +32,7 @@ jobs:
 
       - name: SonarQube Scan
         run: |
-          sonar-scanner -x
+          sonar-scanner --debug
             -Dsonar.host.url=https://sonarcloud.io
             -Dsonar.login=c0682b1f8334193c467dd8ddf6950020bdc64f21
             -Dsonar.organization=vprofile-actions-newc
