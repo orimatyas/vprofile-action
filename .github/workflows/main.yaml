@@ -34,7 +34,7 @@ jobs:
         run: |
           sonar-scanner -x
             -Dsonar.host.url=https://sonarcloud.io
-            -Dsonar.login=
+            -Dsonar.login=c0682b1f8334193c467dd8ddf6950020bdc64f21
             -Dsonar.organization=vprofile-actions-newc
             -Dsonar.projectKey=vproapp-newc
             -Dsonar.sources=src/
